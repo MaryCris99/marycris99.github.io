@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #D14D72;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #FFABAB;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.img {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*Photo Gallery CSS*/
+.slider {
+    position: relative;
+    width: 600px;
+	  height: 400px;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
+
+  #copyright{
+    text-align: center;
+  }
+
+  /*************Contact Form CSS*****************/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#D14D72;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFABAB;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #FEF2F4;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hello!</h1>
+  <h1>Welcome to my page.</h1>
+</div>
+
+<div class="navbar">
+    <a href="About Me.html">Resume</a>
+    <a href="html_cheatsheet.html">HTML</a>
+    <a href="JavaScript.html">JavaScript</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div><center><img src="Me.jpg"; style="height:200px;"></center></div>
+    <h3>Hi! I am Mary Cris. I am currently an international student in Bow Valley College.</h3>
+    <p>With over 10 years of experience in IT, Administration, Education, Retail Industry, I have acquired the knowledge and skills in Customer Service, Administration, Troubleshooting and configuring computer hardware and software problem.</p>
+  
+    <br>
+    <h2>Contact Form</h2>
+
+    <div class="container">
+      <form action="mailto:m.alegria357@mybvc.ca" method="post" enctype="text/plain">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="First name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last name">
+    
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+</div>
+
+  <!--Gallery-->
+<div class="main">
+    <center> <div class="slider">
+    <img src="Images/1.jpg" alt="Image 1">
+    <img src="Images/2.jpg" alt="Image 2">
+    <img src="Images/3.jpg" alt="Image 3">
+    <img src="Images/4.jpg" alt="Image 4">
+    <img src="Images/5.jpg" alt="Image 5">
+    <img src="Images/6.jpg" alt="Image 6">
+    <img src="Images/7.jpg" alt="Image 7">
+    <img src="Images/8.jpg" alt="Image 8">
+    <img src="Images/9.jpg" alt="Image 9">
+    <img src="Images/10.jpg" alt="Image 10">
+    <img src="Images/11.jpg" alt="Image 11">
+    <img src="Images/12.jpg" alt="Image 12">
+    <img src="Images/13.jpg" alt="Image 13">
+    <img src="Images/14.jpg" alt="Image 14">
+    <img src="Images/15.jpg" alt="Image 15">
+    <img src="Images/16.jpg" alt="Image 16">
+    <img src="Images/17.jpg" alt="Image 17">
+    <img src="Images/18.jpg" alt="Image 18">
+   
+    
+</div></center>
+    <center><p>Some of my memorable photos with my family and friends. <italic><b>(Philippines, Saudi Arabia, Canada)</b></italic></p></center>
+    <p>I worked in Saudi Arabia for 6 years and had the chance to explore the country and tried their popular food such as "shawarma", "kabsa", and "biryani".
+        When I am not working or studying, I enjoy traveling and spending time with my family and friends.</p>
+    <br>
+
+    <h2>HTML</h2>
+    
+    <div><center><img src="images/HTML.jpg"; style="height:200px"; width="400px"></center></div>
+    <p><b>HTML (HyperText Markup Language)</b>is the code that is used to structure a web page and its content.</h3>
+    For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.</p>
+    
+    <br>
+    <h2>JavaScript</h2>
+    <div><center><img src="images/formatter.gif"; style="height:200px"; width="400px"></center></div>
+    <p><b>JavaScript</b> is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
+    
+  </div>
+  </div>
+
+
+</div>
+
+<!--Footer-->
+<footer>
+    <p id="copyright">
+      &copy; 2023 Mary Cris Alegria. All rights reserved.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

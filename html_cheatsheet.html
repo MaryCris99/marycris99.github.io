@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+
+<style>
+.parentClass {
+  background-color:#f1f1f1;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .parentClass:hover {
+  background-color: #FFABAB;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+img{
+    width:100x;
+    height: 100px;;
+}
+
+.column{
+    width: 50% 50%;;
+}
+
+header{
+  background-color:#D14D72;
+  text-align: center; 
+  font-weight: bolder;
+  font-size: xx-large;
+  padding: 20px;
+  color: #FEF2F4;
+}
+
+</style>
+</head>
+<body>
+
+<header>HTML Cheat Sheet</header>
+<button class="parentClass">What is HTML?</button>
+<div class="content">
+<ul>
+<li>HTML stands for Hyper Text Markup Language</li>
+<li>HTML is the standard markup language for creating Web pages</li>
+<li>HTML describes the structure of a Web page</li>
+<li>HTML consists of a series of elements</li>
+<li>HTML elements tell the browser how to display the content</li>
+<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+</li>
+</ul>
+</div>
+
+<button class="parentClass">Headings</button>
+<div class="content">
+<h3>HTML headings are defined with the < h1 > to < h6 > tags.</h3>
+<p>< h1 > defines the most important heading. < h6 > defines the least important heading:</p>
+    <!-- Headings -->
+    <h1>Heading 1  &nbsp; &nbsp;< h1 >< /h1 ></h1>
+    <h2>Heading 2  &nbsp; &nbsp;< h2 >< /h2 ></h2>
+    <h3>Heading 3  &nbsp; &nbsp;< h3 >< /h3 ></h3>
+    <h4>Heading 4  &nbsp; &nbsp;< h4 >< /h4 ></h4>
+    <h5>Heading 5  &nbsp; &nbsp;< h5 >< /h5 ></h5>
+    <h6>Heading 6  &nbsp; &nbsp;< h6 >< /h6 ></h6>
+
+</div>
+
+<button class="parentClass">Paragraph</button>
+<div class="content">
+  <!-- Paragraphs -->
+  <p>This is a paragraph. &nbsp; &nbsp;< p >< /p ></p>
+
+</div>
+<button class="parentClass">Links</button>
+<div class="content">
+   <!-- Links -->
+ <br>
+   <a href="https://www.google.com">Please click! &nbsp;&nbsp;   < a href="https://www.google.com"> < /a> </a>
+ <br><br>
+</div>
+
+
+<button class="parentClass">Images</button>
+<div class="content">
+  <!-- Images -->
+  <br>
+  <img src="image.jpg" alt="Image description"> 
+  <p>
+    < img src="image.jpg" alt="Image description" > 
+  </p>
+
+</div>
+
+<button class="parentClass">List</button>
+<div class="content">
+    <ul>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+      </ul>
+      <ol>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+      </ol>
+<h3> Unordered List</h3>
+<p> < ul>  </p>
+<p> < li> < /li> </p>
+<p>  < /ul> </p>
+<br>
+<h3> Ordered List</h3>
+<p> < ol>  </p>
+<p> < li> < /li> </p>
+<p>  < /ol> </p>
+</div>
+
+<button class="parentClass">Table</button>
+<div class="content">
+    <table>
+        <thead>
+          <tr>
+            <th>Table header 1</th>
+            <th>Table header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Table data 1</td>
+            <td>Table data 2</td>
+          </tr>
+          <tr>
+            <td>Table data 3</td>
+            <td>Table data 4</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>A < table> < /table> in HTML consists of table cells inside rows and columns.</p>
+      <p> The  < thead> < /thead> tag in HTML is used to give a header to the group of content of the body. This tag is used in HTML tables as head and body which is known as thead and tbody.</p>
+
+      <p> Table row: < tr> < /tr></p> 
+      <p> Table header < th><b>Table header 1</b>< /th></p>
+      <p> Table data: < td>Table data 1< /td></p>
+</div>
+
+<button class="parentClass">Forms</button>
+<div class="content">
+    <form>
+       <p>The < input > tag specifies an input field where the user can enter data.</p>
+       <p>The < input > element is the most important form element.</p>
+       <p>The < input > element can be displayed in several ways, depending on the type attribute.</p>
+       <p> 
+        <label for="input-text">Input label</label>
+        <input type="text" id="input-text" name="input-text">
+       </p>
+       
+        <p>The < input type="checkbox" > defines a checkbox.</p>
+        <p>The checkbox is shown as a square box that is ticked (checked) when activated.</p>
+        <p>Checkboxes are used to let a user select one or more options of a limited number of choices.</p>
+        <p><i><b>Always add the <u>< label ></u> tag for best accessibility practices!</b></i></p> 
+
+        <label for="input-checkbox">Checkbox label</label>
+        <input type="checkbox" id="input-checkbox" name="input-checkbox">
+        <br><br>
+        <label for="input-radio-1">Radio button 1</label>
+        <input type="radio" id="input-radio-1" name="input-radio" value="radio-1">
+        <br>
+        <label for="input-radio-2">Radio button 2</label>
+        <input type="radio" id="input-radio-2" name="input-radio" value="radio-2">
+        <br><br>
+        <label for="input-select">Select label</label>
+        <select id="input-select" name="input-select">
+          <option value="option-1">Option 1</option>
+          <option value="option-2">Option 2</option>
+          <option value="option-3">Option 3</option>
+        </select>
+        <br><br>
+        <label for="input-textarea">Text area label</label>
+        <textarea id="input-textarea" name="input-textarea"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+</div>
+
+
+<button class="parentClass">HTML Block and Inline Elements</button>
+<div class="content">
+<p>Every HTML element has a default display value, depending on what type of element it is.</p>
+<p>There are two display values: <u><b>block</b> </u>and <u><b>inline</b></u> .</p>
+
+<h3>Block-level Elements</h3>
+
+<p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</p>
+<p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+<p>Two commonly used block elements are: <b>< p ></b> and <b>< div ></b>.</p>
+<p>The < p > element defines a paragraph in an HTML document.</p>
+<p>The < div > element defines a division or a section in an HTML document.</p>
+
+<table width="400" border="1">
+  <tr>
+    <td>The < p > element is a block-level element.</td>
+  </tr>
+  <tr>
+    <td>The < div > element is a block-level element.</td>
+  </tr>
+</table>
+<br>
+
+<p><b>Here are the block-level elements in HTML:</b></p>
+<table width="610" height="191" border="0">
+  <tr>
+    <td>< address ></td>
+    <td>< article ></td>
+    <td> < aside ></td>
+    <td>< blockquote ></td>
+    <td>< canvas ></td>
+    <td>< dd ></td>
+  </tr>
+  <tr>
+    <td>< div ></td>
+    <td>< dl ></td>
+    <td>< dt ></td>
+    <td>< fieldset ></td>
+    <td>< figcaption ></td>
+    <td> < figure ></td>
+  </tr>
+  <tr>
+    <td>< footer ></td>
+    <td>< form ></td>
+    <td>< h1 >-< h6 ></td>
+    <td>< header ></td>
+    <td>< hr ></td>
+    <td>< li ></td>
+  </tr>
+  <tr>
+    <td>< main ></td>
+    <td>< nav ></td>
+    <td>< noscript ></td>
+    <td>< ol ></td>
+    <td>< p ></td>
+    <td>< pre > </td>
+  </tr>
+  <tr>
+    <td>< section ></td>
+    <td>< table ></td>
+    <td>< tfoot ></td>
+    <td>< ul ></td>
+    <td>< video ></td>
+  </tr>
+</table>
+<br>
+<h3>Inline Elements</h3>
+<p>An <b>inline element</b> does not start on a new line.</p>
+<p>An inline element only takes up as much width as necessary</p>
+<p>This is a < span > element inside a paragraph. </p>
+</div>
+
+<button class="parentClass">HTML Multimedia</button>
+<div class="content">
+<h3>What is Multimedia?</h3>
+  <p>Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.</p>
+  <p>Web pages often contain multimedia elements of different types and formats.</p>
+<h3>Browser Support</h3>
+<p>The first web browsers had support for text only, limited to a single font in a single color.</p>
+<p>Later came browsers with support for colors, fonts, images, and multimedia!</p>
+<h3>Multimedia Formats</h3>
+<p>Multimedia elements (like audio or video) are stored in media files.</p>
+<p>The most common way to discover the type of a file, is to look at the file extension.</p>
+<p>Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.</p>
+<h3>Common Video Formats</h3>
+<p>The MP4, WebM, and Ogg formats are supported by HTML.</p>
+<p>The MP4 format is recommended by YouTube.</p>
+</div>
+
+<button class="parentClass">HTML Styles</button>
+<div class="content">
+<h3>The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</h3>
+<h2>The HTML Style Attribute</h2>
+<p>Setting the style of an HTML element, can be done with the style attribute.</p>
+<b><p>The HTML style attribute has the following syntax:</p></b>
+
+<p>< tagname style="property:value;" >< /tagname> </p>
+
+<script>
+var coll = document.getElementsByClassName("parentClass");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

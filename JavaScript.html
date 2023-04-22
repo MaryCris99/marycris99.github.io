@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Cheat Sheet</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color:#D14D72;
+      text-align: center; 
+      font-weight: bolder;
+      font-size: xx-large;
+      padding: 20px;
+      color: #FEF2F4;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #FFABAB;
+		}
+
+		th {
+			background-color: #FEF2F4;
+		}
+
+		code {
+			background-color: #FEF2F4;
+			border: 1px solid #ccc;
+			display: inline-block;
+			padding: 5px;
+		}
+    h3{
+      padding: 10px;
+      margin:10px;
+    }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>JavaScript Cheat Sheet</h1>
+	</header>
+ <h3>JavaScript is a programming language that powers the dynamic behavior on most websites. Alongside
+  with HTM and CSS, it is a core technology that makes the web run.</h3>
+	<main>
+		<h2>Variables</h2>
+		<table>
+			<tr>
+				<th>Keyword</th>
+				<th>Description</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td><code>var</code></td>
+				<td>Declares a variable with optional initialization</td>
+				<td><code>var x = 5;</code></td>
+			</tr>
+			<tr>
+				<td><code>let</code></td>
+				<td>Declares a block-scoped variable with optional initialization</td>
+				<td><code>let y = "Hello, world!";</code></td>
+			</tr>
+			<tr>
+				<td><code>const</code></td>
+				<td>Declares a block-scoped constant with required initialization</td>
+				<td><code>const PI = 3.14159;</code></td>
+			</tr>
+		</table>
+
+		<h2>Operators</h2>
+		<table>
+			<tr>
+				<th>Operator</th>
+				<th>Description</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td><code>+</code></td>
+				<td>Addition</td>
+				<td><code>1 + 2</code></td>
+			</tr>
+			<tr>
+				<td><code>-</code></td>
+				<td>Subtraction</td>
+				<td><code>3 - 2</code></td>
+			</tr>
+			<tr>
+				<td><code>*</code></td>
+				<td>Multiplication</td>
+				<td><code>2 * 3</code></td>
+			</tr>
+			<tr>
+				<td><code>/</code></td>
+				<td>Division</td>
+				<td><code>6 / 2</code></td>
+			</tr>
+			<tr>
+				<td><code>%</code></td>
+				<td>Modulus (remainder)</td>
+				<td><code>7 % 3</code></td>
+        </tr>
+        </table>
+      
+      <h2>Functions</h2>
+      <table>
+      <tr>
+				<th>Keyword</th>
+				<th>Description</th>
+				<th>Example</th>
+			</tr>
+      <tr>
+				<td><code>myFunction()</code></td>
+				<td>Declare a function:</td>
+				<td><code>function myFunction() 
+          {
+          // function body
+        }</code>
+        <p>Call a function:</p>
+        <code>myFunction();</code></td>
+			</tr>
+      </table>
+          <h2>Arrays</h2>
+          <table>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>let myArray = [1, 2, 3];</code></td>
+              <td>Access an array element:</td>
+              <td><code>myArray[0];</code>
+            </tr>
+          </table>
+          <h2>Console.log()</h2>
+          <table>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>console.log</code></td>
+              <td>The console.log() method is used to log or print messages to the console.It can also be used to print objetcts and other info.</td>
+              <td><code>console.log('Hello World!'); // Prints: Hello World!</code>
+            </tr>
+          </table>
+          <h2>Multi-line Comments</h2>
+          <table>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>/*  */</code></td>
+              <td>In JavaScript, Multi-line comments are created by surrounding the lines with /* at the beginning and */ at the end. It helps for indication some hints or explaining a block of code.</td>
+              <td><code>/*Please put your code here*/</code>
+            </tr>
+          </table>
+          <h2>Booleans</h2>
+          <table>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code>let x=true;</code></td>
+              <td>Booleans are a primitive data type. They can be either true or false.</td>
+              <td><code>let noClass=true;</code>
+            </tr>
+          </table>
+          <h2>Built-in Objects</h2>
+          <table>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td><code></code></td>
+              <td>Built-in objects contain methods that can be called by appending the object name with a period., the method name, and a set of parenthesis.</td>
+              <td><code>Math.random()</code> //Math is the Built-in object.
+            </tr>
+          </table>
+       
+          
+      </div>
